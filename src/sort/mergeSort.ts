@@ -2,7 +2,10 @@ const mergeSort = (arr: number[]): number[] => {
   const merge = (arr1: number[], arr2: number[]) => {
     let i = 0;
     let j = 0;
-
+    /**
+     * arr2 всегда больше или равен arr1 за счёт использования Math.floor
+     * при вычислении индекса середины исходного массива
+     * */
     return Array.from({ length: arr1.length + arr2.length }).map((_) => {
       let el = null;
       if (arr2[i] <= arr1[j] || arr1[j] === undefined) {
