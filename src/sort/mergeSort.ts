@@ -1,18 +1,15 @@
 const mergeSort = (arr: number[]): number[] => {
   const merge = (arr1: number[], arr2: number[]) => {
-    const [longest, shortest] =
-      arr1.length >= arr2.length ? [arr1, arr2] : [arr2, arr1];
-
     let i = 0;
     let j = 0;
 
     return Array.from({ length: arr1.length + arr2.length }).map((_) => {
       let el = null;
-      if (longest[i] < shortest[j] || shortest[j] === undefined) {
-        el = longest[i];
+      if (arr2[i] <= arr1[j] || arr1[j] === undefined) {
+        el = arr2[i];
         i += 1;
       } else {
-        el = shortest[j];
+        el = arr1[j];
         j += 1;
       }
 
