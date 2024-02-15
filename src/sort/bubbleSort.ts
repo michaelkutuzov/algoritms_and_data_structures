@@ -1,4 +1,6 @@
-const bubbleSort = (arr: number[]) => {
+import type { NumArray } from '../types';
+
+const bubbleSort = (arr: NumArray) => {
   for (let limit = arr.length - 1; limit > 0; limit -= 1) {
     for (let i = 0; i < limit; i += 1) {
       if (arr[i] > arr[i + 1]) {

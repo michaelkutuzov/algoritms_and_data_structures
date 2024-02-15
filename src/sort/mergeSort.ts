@@ -1,5 +1,7 @@
-const mergeSort = (arr: number[]): number[] => {
-  const merge = (arr1: number[], arr2: number[]) => {
+import type { NumArray } from '../types';
+
+const mergeSort = (arr: NumArray): NumArray => {
+  const merge = (arr1: NumArray, arr2: NumArray) => {
     let i = 0;
     let j = 0;
     /**

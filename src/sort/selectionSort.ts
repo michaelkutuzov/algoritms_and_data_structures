@@ -1,4 +1,6 @@
-const selectionSort = (arr: number[]): number[] => {
+import type { NumArray } from '../types';
+
+const selectionSort = (arr: NumArray) => {
   for (let i = 0; i < arr.length; i += 1) {
     let indexMin = i;
     for (let j = indexMin; j < arr.length; j += 1) {

@@ -1,4 +1,4 @@
-type NumArray = number[];
+import type { NumArray } from '../types';
 
 const shakerSort = (arr: NumArray) => {
   if (arr.length < 2) return arr;
@@ -32,3 +32,5 @@ const shakerSort = (arr: NumArray) => {
 
   return arr;
 };
+
+export default shakerSort;
